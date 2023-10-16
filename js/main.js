@@ -1,7 +1,7 @@
-const oldgreeting = require("./oldgreeting.js");
+const newgreeting = require("./newgreeting.js");
 console.log("merge oefening leuk!")
 
-oldgreeting.greet()
+newgreeting.newGreeting()
 
 
 function basicHaiku()
