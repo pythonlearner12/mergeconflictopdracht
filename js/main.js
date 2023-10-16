@@ -1,17 +1,22 @@
-const oldgreeting = require("./oldgreeting.js");
+const newgreeting = require("./newgreeting.js");
 console.log("merge oefening leuk!")
 
-oldgreeting.greet()
+newgreeting.newGreeting()
 
 
 function basicHaiku()
 {
-    return ["Toward those short trees","We saw an elephant descending","On a day in spring."]
+    return ["lopen langs de bomen","We saw an elephant descending","On a day in spring."]
 }
 //zet hier je haiku functie neer, zie https://github.com/progsen/haikugitopdracht voor ideeen
+function student2Haiku()
+{
+    return ["An old silent pond...", "A frog jumps into the pond", "splash! Silence again."]
+}
 
 haikus = [
-    basicHaiku()
+    basicHaiku(),
+    student2Haiku()
 ]
 
 function randomHaiku()
