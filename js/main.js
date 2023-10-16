@@ -9,9 +9,14 @@ function basicHaiku()
     return ["lopen langs de bomen","We saw an elephant descending","On a day in spring."]
 }
 //zet hier je haiku functie neer, zie https://github.com/progsen/haikugitopdracht voor ideeen
+function student1Haiku()
+{
+    return ["The lamp once out", "Cool stars enter ", "The window frame."];
+}
 
 haikus = [
-    basicHaiku()
+    basicHaiku(),
+    student1Haiku()
 ]
 
 function randomHaiku()
