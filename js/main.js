@@ -1,14 +1,10 @@
-const newgreeting = require("./newgreeting.js");
-console.log("merge oefening leuk!")
+require("./newgreeting.js").newGreeting();
 
-newgreeting.newGreeting()
-
-
+// Haikus
 function basicHaiku()
 {
-    return ["lopen langs de bomen","We saw an elephant descending","On a day in spring."]
+    return ["Lopen langs de bomen","We saw an elephant descending","On a day in spring."];
 }
-//zet hier je haiku functie neer, zie https://github.com/progsen/haikugitopdracht voor ideeen
 
 function student1Haiku()
 {
@@ -17,28 +13,19 @@ function student1Haiku()
 
 function student2Haiku()
 {
-    return ["An old silent pond...", "A frog jumps into the pond", "splash! Silence again."]
+    return ["An old silent pond...", "A frog jumps into the pond", "splash! Silence again."];
 }
 
-haikus = [
+// Get random haiku.
+const haikus = [
     basicHaiku(),
     student1Haiku(),
     student2Haiku()
-]
+];
 
 function randomHaiku()
 {
-
-    let i = Math.floor(Math.random(haikus.length));
-    return haikus[i];
+    return haikus[Math.floor(Math.random(haikus.length))];
 }
 
-function start()
-{
-    console.log("starting main")
-    
-    console.log(randomHaiku())
-
-}
-
-start()
+console.log(randomHaiku());
